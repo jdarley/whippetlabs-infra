@@ -1,2 +1,2 @@
-.idea/*
-prod/.terraform/*
+.idea/
+.terraform/
