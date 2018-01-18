@@ -5,7 +5,6 @@ module "network" {
 
   public-cidr-blocks  = "10.0.1.0/24"
   private-cidr-blocks = "10.0.2.0/24"
-  ci-cidr-blocks      = "10.0.3.0/24"
 }
 
 module "dns" {

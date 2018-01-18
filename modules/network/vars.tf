@@ -9,7 +9,3 @@ variable "public-cidr-blocks" {
 variable "private-cidr-blocks" {
   description = "A common separated list of CIDR blocks to use for private subnets"
 }
-
-variable "ci-cidr-blocks" {
-  description = "A common separated list of CIDR blocks to use for the ci subnets"
-}

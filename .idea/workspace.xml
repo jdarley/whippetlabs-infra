@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95786125-9e04-48ea-9a94-e03b8aa7eb20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/bastion/cloud-init.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/bastion/dns.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/bastion/ec2.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/bastion/vars.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/dns/vars.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/network/ngw.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/main.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/provider.tf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ci/network.tf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ci/outputs.tf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ci/security-group.tf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ci/vars.tf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dns/vars.tf" afterPath="$PROJECT_DIR$/modules/dns/vars.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/network/vars.tf" afterPath="$PROJECT_DIR$/modules/network/vars.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prod/main.tf" afterPath="$PROJECT_DIR$/prod/main.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prod/terraform.tf" afterPath="$PROJECT_DIR$/prod/terraform.tf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,42 +22,66 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.tf" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.tf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prod/main.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="108">
+              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding>
-                <marker date="1513957420736" expanded="true" signature="355:379" ph="${...}" />
-                <marker date="1513957420736" expanded="true" signature="397:432" ph="${...}" />
-                <marker date="1513957420736" expanded="true" signature="451:472" ph="${...}" />
+                <marker date="1516272962873" expanded="true" signature="317:341" ph="${...}" />
+                <marker date="1516272962873" expanded="true" signature="359:394" ph="${...}" />
+                <marker date="1516272962873" expanded="true" signature="413:434" ph="${...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloud-init.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/bastion/cloud-init.sh">
+      <file leaf-file-name="main.tf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/main.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+            <state relative-caret-position="522">
+              <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+              <folding>
+                <marker date="1516275808815" expanded="true" signature="302:330" ph="${...}" />
+                <marker date="1516275808815" expanded="true" signature="532:560" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outputs.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prod/outputs.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding>
+                <marker date="1513950394283" expanded="true" signature="29:53" ph="${...}" />
+                <marker date="1513950394283" expanded="true" signature="99:135" ph="${...}" />
+                <marker date="1513950394283" expanded="true" signature="180:215" ph="${...}" />
+                <marker date="1513950394283" expanded="true" signature="259:285" ph="${...}" />
+                <marker date="1513950394283" expanded="true" signature="324:345" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="provider.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prod/provider.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ec2.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/bastion/ec2.tf">
+      <file leaf-file-name="provider.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/provider.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <marker date="1513954963584" expanded="true" signature="220:252" ph="${...}" />
-                <marker date="1513954963584" expanded="true" signature="388:405" ph="${...}" />
-                <marker date="1513954963584" expanded="true" signature="700:740" ph="${...}" />
-                <marker date="1513954963584" expanded="true" signature="943:956" ph="${...}" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,67 +89,8 @@
       <file leaf-file-name="terraform.tf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prod/terraform.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subnet.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/subnet/subnet.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding>
-                <marker date="1513954779091" expanded="true" signature="76:106" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="83:105" ph="(...)" />
-                <marker date="1513954779091" expanded="true" signature="126:158" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="134:157" ph="(...)" />
-                <marker date="1513954779091" expanded="true" signature="207:228" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="243:256" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="274:320" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="283:319" ph="(...)" />
-                <marker date="1513954779091" expanded="true" signature="345:413" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="354:412" ph="(...)" />
-                <marker date="1513954779091" expanded="true" signature="436:454" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="456:524" ph="${...}" />
-                <marker date="1513954779091" expanded="true" signature="465:523" ph="(...)" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dns.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/bastion/dns.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding>
-                <marker date="1513955622565" expanded="true" signature="55:73" ph="${...}" />
-                <marker date="1513955622565" expanded="true" signature="135:167" ph="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dns.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/dns/dns.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <marker date="1513950467852" expanded="true" signature="49:62" ph="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vars.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/bastion/vars.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="162">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -142,17 +112,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outputs.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/network/outputs.tf">
+      <file leaf-file-name="subnet.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/subnet/subnet.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
-                <marker date="1513950257067" expanded="true" signature="29:46" ph="${...}" />
-                <marker date="1513950257067" expanded="true" signature="95:123" ph="${...}" />
-                <marker date="1513950257067" expanded="true" signature="173:202" ph="${...}" />
-                <marker date="1513950257067" expanded="true" signature="248:283" ph="${...}" />
-                <marker date="1513950257067" expanded="true" signature="328:362" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="76:106" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="83:105" ph="(...)" />
+                <marker date="1513954779091" expanded="true" signature="126:158" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="134:157" ph="(...)" />
+                <marker date="1513954779091" expanded="true" signature="207:228" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="243:256" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="274:320" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="283:319" ph="(...)" />
+                <marker date="1513954779091" expanded="true" signature="345:413" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="354:412" ph="(...)" />
+                <marker date="1513954779091" expanded="true" signature="436:454" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="456:524" ph="${...}" />
+                <marker date="1513954779091" expanded="true" signature="465:523" ph="(...)" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vars.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/subnet/vars.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outputs.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/subnet/outputs.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <folding>
+                <marker date="1513950096574" expanded="true" signature="35:73" ph="${...}" />
+                <marker date="1513950096574" expanded="true" signature="43:72" ph="(...)" />
+                <marker date="1513950096574" expanded="true" signature="49:71" ph="(...)" />
+                <marker date="1513950096574" expanded="true" signature="111:136" ph="${...}" />
               </folding>
             </state>
           </provider>
@@ -184,7 +187,6 @@
         <option value="$PROJECT_DIR$/modules/network/public-routing.tf" />
         <option value="$PROJECT_DIR$/modules/network/vpc.tf" />
         <option value="$PROJECT_DIR$/prod/outputs.tf" />
-        <option value="$PROJECT_DIR$/modules/dns/vars.tf" />
         <option value="$PROJECT_DIR$/modules/dns/dns.tf" />
         <option value="$PROJECT_DIR$/modules/network/ngw.tf" />
         <option value="$PROJECT_DIR$/modules/bastion/elb.tf" />
@@ -194,7 +196,11 @@
         <option value="$PROJECT_DIR$/modules/bastion/dns.tf" />
         <option value="$PROJECT_DIR$/modules/bastion/cloud-init.sh" />
         <option value="$PROJECT_DIR$/modules/bastion/iam.tf" />
+        <option value="$PROJECT_DIR$/modules/network/vars.tf" />
+        <option value="$PROJECT_DIR$/modules/dns/vars.tf" />
         <option value="$PROJECT_DIR$/prod/main.tf" />
+        <option value="$PROJECT_DIR$/prod/terraform.tf" />
+        <option value="$PROJECT_DIR$/examples/main.tf" />
       </list>
     </option>
   </component>
@@ -204,7 +210,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="69" />
     <option name="y" value="34" />
     <option name="width" value="2491" />
@@ -225,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,31 +242,12 @@
             <path>
               <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
               <item name="whippetlabs-infra" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
               <item name="whippetlabs-infra" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="bastion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="whippetlabs-infra" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="ci" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="whippetlabs-infra" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="dns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="whippetlabs-infra" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="whippetlabs-infra" type="b2602c69:ProjectViewProjectNode" />
@@ -276,15 +264,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -408,39 +400,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513947813236</updated>
-      <workItem from="1513947814407" duration="8465000" />
+      <workItem from="1513947814407" duration="9663000" />
+      <workItem from="1516272837413" duration="3494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8465000" />
+    <option name="totallyTimeSpent" value="13157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="2497" height="1445" extended-state="6" />
+    <frame x="64" y="-4" width="2497" height="1445" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24989791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25193956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,6 +447,126 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/prod/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516272962873" expanded="true" signature="317:341" ph="${...}" />
+            <marker date="1516272962873" expanded="true" signature="359:394" ph="${...}" />
+            <marker date="1516272962873" expanded="true" signature="413:434" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/cloud-init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/ec2.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1513954963584" expanded="true" signature="220:252" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="388:405" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="700:740" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="943:956" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prod/terraform.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/subnet/subnet.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding>
+            <marker date="1513954779091" expanded="true" signature="76:106" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="83:105" ph="(...)" />
+            <marker date="1513954779091" expanded="true" signature="126:158" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="134:157" ph="(...)" />
+            <marker date="1513954779091" expanded="true" signature="207:228" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="243:256" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="274:320" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="283:319" ph="(...)" />
+            <marker date="1513954779091" expanded="true" signature="345:413" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="354:412" ph="(...)" />
+            <marker date="1513954779091" expanded="true" signature="436:454" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="456:524" ph="${...}" />
+            <marker date="1513954779091" expanded="true" signature="465:523" ph="(...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/dns.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1513955622565" expanded="true" signature="55:73" ph="${...}" />
+            <marker date="1513955622565" expanded="true" signature="135:167" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dns/dns.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1513950467852" expanded="true" signature="49:62" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/vpc.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <marker date="1513950362183" expanded="true" signature="53:74" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="212:229" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="248:273" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="365:382" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="401:427" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1513950257067" expanded="true" signature="29:46" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="95:123" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="173:202" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="248:283" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="328:362" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/ci/vars.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -466,10 +579,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/flow-logs.tf" />
+    <entry file="file://$PROJECT_DIR$/modules/bastion/elb.tf" />
+    <entry file="file://$PROJECT_DIR$/modules/bastion/iam.tf" />
+    <entry file="file://$PROJECT_DIR$/modules/bastion/cloud-init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/dns.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding>
-            <marker date="1513944286668" expanded="true" signature="36:66" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="112:166" ph="${...}" />
+            <marker date="1513955622565" expanded="true" signature="55:73" ph="${...}" />
+            <marker date="1513955622565" expanded="true" signature="135:167" ph="${...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/ec2.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1513954963584" expanded="true" signature="220:252" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="388:405" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="700:740" ph="${...}" />
+            <marker date="1513954963584" expanded="true" signature="943:956" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/bastion/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -477,22 +630,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dns/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1513944286668" expanded="true" signature="33:66" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="40:65" ph="(...)" />
-            <marker date="1513944286668" expanded="true" signature="89:124" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="97:123" ph="(...)" />
-            <marker date="1513944286668" expanded="true" signature="186:199" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="218:239" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="311:324" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="417:441" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="502:518" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="575:599" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="657:673" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="735:759" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="777:829" ph="${...}" />
-            <marker date="1513944286668" expanded="true" signature="786:828" ph="(...)" />
+            <marker date="1509022824544" expanded="true" signature="30:59" ph="${...}" />
+            <marker date="1509022824544" expanded="true" signature="99:138" ph="${...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dns/dns.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1513950467852" expanded="true" signature="49:62" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dns/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -502,6 +669,31 @@
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <marker date="1513946834611" expanded="true" signature="52:69" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/ngw.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1513951818377" expanded="true" signature="83:100" ph="${...}" />
+            <marker date="1513951818377" expanded="true" signature="117:154" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1513950257067" expanded="true" signature="29:46" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="95:123" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="173:202" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="248:283" ph="${...}" />
+            <marker date="1513950257067" expanded="true" signature="328:362" ph="${...}" />
           </folding>
         </state>
       </provider>
@@ -536,6 +728,28 @@
             <marker date="1513950353647" expanded="true" signature="408:436" ph="${...}" />
             <marker date="1513950353647" expanded="true" signature="453:509" ph="${...}" />
             <marker date="1513950353647" expanded="true" signature="462:508" ph="(...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/vpc.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <marker date="1513950362183" expanded="true" signature="53:74" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="212:229" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="248:273" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="365:382" ph="${...}" />
+            <marker date="1513950362183" expanded="true" signature="401:427" ph="${...}" />
           </folding>
         </state>
       </provider>
@@ -575,100 +789,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prod/provider.tf">
+    <entry file="file://$PROJECT_DIR$/prod/terraform.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/vars.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dns/outputs.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509022824544" expanded="true" signature="30:59" ph="${...}" />
-            <marker date="1509022824544" expanded="true" signature="99:138" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/flow-logs.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dns/vars.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/elb.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/ngw.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <marker date="1513951818377" expanded="true" signature="83:100" ph="${...}" />
-            <marker date="1513951818377" expanded="true" signature="117:154" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/vpc.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1513950362183" expanded="true" signature="53:74" ph="${...}" />
-            <marker date="1513950362183" expanded="true" signature="212:229" ph="${...}" />
-            <marker date="1513950362183" expanded="true" signature="248:273" ph="${...}" />
-            <marker date="1513950362183" expanded="true" signature="365:382" ph="${...}" />
-            <marker date="1513950362183" expanded="true" signature="401:427" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/outputs.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1513950257067" expanded="true" signature="29:46" ph="${...}" />
-            <marker date="1513950257067" expanded="true" signature="95:123" ph="${...}" />
-            <marker date="1513950257067" expanded="true" signature="173:202" ph="${...}" />
-            <marker date="1513950257067" expanded="true" signature="248:283" ph="${...}" />
-            <marker date="1513950257067" expanded="true" signature="328:362" ph="${...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/subnet/subnet.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="288">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <marker date="1513954779091" expanded="true" signature="76:106" ph="${...}" />
             <marker date="1513954779091" expanded="true" signature="83:105" ph="(...)" />
@@ -687,80 +819,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/vars.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dns/dns.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1513950467852" expanded="true" signature="49:62" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/cloud-init.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/iam.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/dns.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <marker date="1513955622565" expanded="true" signature="55:73" ph="${...}" />
-            <marker date="1513955622565" expanded="true" signature="135:167" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/bastion/ec2.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1513954963584" expanded="true" signature="220:252" ph="${...}" />
-            <marker date="1513954963584" expanded="true" signature="388:405" ph="${...}" />
-            <marker date="1513954963584" expanded="true" signature="700:740" ph="${...}" />
-            <marker date="1513954963584" expanded="true" signature="943:956" ph="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prod/terraform.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prod/main.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="3" />
+        <state relative-caret-position="108">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
-            <marker date="1513957420736" expanded="true" signature="355:379" ph="${...}" />
-            <marker date="1513957420736" expanded="true" signature="397:432" ph="${...}" />
-            <marker date="1513957420736" expanded="true" signature="451:472" ph="${...}" />
+            <marker date="1516272962873" expanded="true" signature="317:341" ph="${...}" />
+            <marker date="1516272962873" expanded="true" signature="359:394" ph="${...}" />
+            <marker date="1516272962873" expanded="true" signature="413:434" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prod/provider.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/provider.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <marker date="1516275808815" expanded="true" signature="302:330" ph="${...}" />
+            <marker date="1516275808815" expanded="true" signature="532:560" ph="${...}" />
           </folding>
         </state>
       </provider>
