@@ -14,18 +14,45 @@ data "aws_ami" "ec2-linux" {
   }
 }
 
-resource "aws_instance" "server" {
-  ami = "${data.aws_ami.ec2-linux.id}"
-  instance_type = "t2.small"
-  subnet_id = "subnet-e75db0af"
-  key_name = "training"
-  associate_public_ip_address = true
+data "template_file" "cloud_init" {
+  template = "${file("./cloud_init.tpl")}"
 
-  tags {
-    Name = "James' Server"
+  vars {
+    firstname = "${var.firstname}"
   }
 }
 
-output "ami-details" {
-  value = "${data.aws_ami.ec2-linux.id}"
+resource "aws_instance" "server" {
+  ami = "${data.aws_ami.ec2-linux.id}"
+  instance_type = "t2.small"
+  subnet_id = "subnet-37d1387f"
+  key_name = "training"
+  associate_public_ip_address = true
+
+  user_data = "${data.template_file.cloud_init.rendered}"
+
+  vpc_security_group_ids = ["${aws_security_group.instance.id}"]
+
+  tags {
+    Name = "${var.firstname}' Server"
+  }
+}
+
+resource "aws_security_group" "instance" {
+  name = "terraform-example-instance"
+  vpc_id = "vpc-7345be15"
+
+  ingress {
+    from_port   = "8080"
+    to_port     = "8080"
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = "80"
+    to_port     = "80"
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 }
