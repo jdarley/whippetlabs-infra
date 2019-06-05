@@ -17,3 +17,11 @@ output "private-subnet-ids" {
 output "public-subnet-ids" {
   value = "${module.public_subnet.subnet_ids}"
 }
+
+output "private-subnet-cidr-blocks" {
+  value = "${module.private_subnet.subnet_cidr_blocks}"
+}
+
+output "public-subnet-cidr-blocks" {
+  value = "${module.public_subnet.subnet_cidr_blocks}"
+}

@@ -9,3 +9,7 @@ variable "cidr-blocks" {
 variable "subnet-name" {
   description = "The name to use to identify the subnets being created"
 }
+
+variable "assign_public_ip" {
+  default = false
+}
