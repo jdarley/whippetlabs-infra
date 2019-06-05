@@ -7,9 +7,3 @@ provider "aws" {
 provider "template" {
   version = "~> 2.1.2"
 }
-
-//
-//provider "cloudflare" {
-//  email = "jdarley@gmail.com"
-//  token = "1263a246decbdcba1bca6a22425ba0a148192"
-//}

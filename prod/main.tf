@@ -38,7 +38,7 @@ data "template_file" "cloud_init" {
 
 resource "aws_launch_configuration" "launch-config" {
   name          = "server-launch-config"
-  image_id      = data.aws_ami.ec2-linux.id
+  image_id      =  data.aws_ami.ec2-linux.id
   instance_type = "t2.micro"
   user_data     = data.template_file.cloud_init.rendered
 
@@ -47,14 +47,6 @@ resource "aws_launch_configuration" "launch-config" {
 
 resource "aws_autoscaling_group" "server-scaling-group" {
   name = "server-auto-scaling-group"
-  # TF-UPGRADE-TODO: In Terraform v0.10 and earlier, it was sometimes necessary to
-  # force an interpolation expression to be interpreted as a list by wrapping it
-  # in an extra set of list brackets. That form was supported for compatibilty in
-  # v0.11, but is no longer supported in Terraform v0.12.
-  #
-  # If the expression in the following list itself returns a list, remove the
-  # brackets to avoid interpretation as a list of lists. If the expression
-  # returns a single list item then leave it as-is and remove this TODO comment.
   vpc_zone_identifier       = [module.network.private-subnet-ids[0]]
   max_size                  = 1
   min_size                  = 1
@@ -72,14 +64,6 @@ resource "aws_autoscaling_group" "server-scaling-group" {
 
 resource "aws_elb" "elb" {
   name = "elb"
-  # TF-UPGRADE-TODO: In Terraform v0.10 and earlier, it was sometimes necessary to
-  # force an interpolation expression to be interpreted as a list by wrapping it
-  # in an extra set of list brackets. That form was supported for compatibilty in
-  # v0.11, but is no longer supported in Terraform v0.12.
-  #
-  # If the expression in the following list itself returns a list, remove the
-  # brackets to avoid interpretation as a list of lists. If the expression
-  # returns a single list item then leave it as-is and remove this TODO comment.
   subnets         = module.network.public-subnet-ids
   security_groups = [aws_security_group.elb.id]
 
